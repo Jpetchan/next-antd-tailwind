@@ -1,13 +1,22 @@
 import type { ThemeConfig } from "antd";
+import { Sarabun } from "next/font/google";
+
+const inter = Sarabun({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
 
 const PRIMARY_BG_COLOR = "#009230";
 const HEADER_BG_COLOR = "#00ab38";
+const BASE_BG_COLOR = "#f5f5f5";
 
 const theme: ThemeConfig = {
   token: {
     fontSize: 16,
     colorPrimary: PRIMARY_BG_COLOR,
-    colorBgLayout: "#f5f5f5",
+    colorBgLayout: BASE_BG_COLOR,
+    fontFamily: inter.style.fontFamily,
   },
   components: {
     Layout: {

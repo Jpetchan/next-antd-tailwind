@@ -1,9 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
-import theme from "@/theme/themeConfig";
-import { ConfigProvider } from "antd";
-const inter = Inter({ subsets: ["latin"] });
 import AppLayout from "@/components/layout";
 
 export const metadata: Metadata = {
@@ -17,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="th">
       <body>
         <AppLayout>{children}</AppLayout>
       </body>

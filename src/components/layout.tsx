@@ -12,7 +12,7 @@ import {
 } from "@ant-design/icons";
 
 const items: MenuProps["items"] = [
-  { key: "/product", label: "Product" },
+  { key: "/product", label: "สินค้า" },
   { key: "/customer", label: "Customer" },
 ];
 

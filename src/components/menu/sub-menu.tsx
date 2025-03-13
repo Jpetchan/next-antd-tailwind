@@ -14,9 +14,6 @@ const SubMenu = ({ items, active }: IProps) => {
   return (
     <div className="bg-white px-5 border border-b-1 flex flex-row py-2 overflow-y-auto">
       {items.map((i) => {
-        console.log(i.key);
-        console.log(active == i.key);
-
         return (
           <Button
             key={i.key}
