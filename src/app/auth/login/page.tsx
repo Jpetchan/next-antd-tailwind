@@ -2,10 +2,18 @@
 
 import React from "react";
 import { Form, Input, Button, Card } from "antd";
+import { setCookie } from "cookies-next";
+import { redirect } from "next/navigation";
 
 const LoginPage = () => {
   const onFinish = (values: any) => {
     console.log("Login Data:", values);
+    const token = "your-jwt-token"; // Replace with actual token
+    setCookie("token", token, {
+      path: "/",
+      maxAge: 60 * 60 * 24 * 7, // 7 days
+    });
+    redirect("/product");
   };
 
   return (
